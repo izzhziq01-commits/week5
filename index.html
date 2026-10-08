@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+                body{
+                        text-align: center;
+                        font-family: Arial;
+                }
+
+                h1{
+                        font-size: 3rem;
+                }
+
+                img{
+                        width: 250px;
+                        height: 400px;
+                }
+        </style>
+</head>
+
+<body>
+
+        <h1>CAT FATTENER 300kg</h1>
+
+        <img id="cat" src="cat.png">
+
+        <br><br>
+
+        <p>THICCNESS</p>
+        <input type="range" id="fat" min="50" max="900" value="250">
+
+        <p>HEIGHT</p>
+        <input type="range" id="height1" min="150" max="600" value="400">
+
+        <p>BACKGROUND COLOR</p>
+
+        <p>RED</p>
+        <input type="range" id="red1" min="0" max="255" value="255">
+
+        <p>GREEN</p>
+        <input type="range" id="green1" min="0" max="255" value="255">
+
+        <p>BLUE</p>
+        <input type="range" id="blue1" min="0" max="255" value="255">
+
+        <script>
+
+                fat.oninput = function(){
+                        cat.style.width = fat.value + "px";
+                }
+
+                height1.oninput = function(){
+                        cat.style.height = height1.value + "px";
+                }
+
+                red1.oninput = function(){
+                        document.body.style.background =
+                        "rgb("+red1.value+","+green1.value+","+blue1.value+")";
+                }
+
+                green1.oninput = function(){
+                        document.body.style.background =
+                        "rgb("+red1.value+","+green1.value+","+blue1.value+")";
+                }
+
+                blue1.oninput = function(){
+                        document.body.style.background =
+                        "rgb("+red1.value+","+green1.value+","+blue1.value+")";
+                }
+
+        </script>
+
+</body>
+</html>
